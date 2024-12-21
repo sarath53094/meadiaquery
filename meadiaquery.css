@@ -1,0 +1,195 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    padding: 10px;
+    background-color: green;
+    color: white;
+    align-items: center;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+header.navebar ul {
+    display: flex;
+    margin: 0;
+
+}
+
+header li {
+    text-decoration: none;
+    list-style: none;
+    padding: 10px;
+    display: inline-block;
+    justify-content: center;
+    font-weight: 10px;
+}
+
+header li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    justify-items: center;
+}
+li a:hover{
+    background-color: beige;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* three dive with style */
+.container {
+    display: flex;
+    margin: 10px;
+}
+
+.section {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    padding: 2rem;
+    color: rgb(9, 9, 9);
+}
+
+.box {
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(189, 182, 182);
+    border-radius: 10px;
+}
+
+.section img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    justify-items: center;
+}
+
+.menu-close {
+    font-size: 20px;
+    /* display: none;   */
+    margin-left: auto;
+
+}
+
+/* checkbox */
+#menu-select {
+    display: none;
+
+}
+
+/* threeline */
+.menu-select {
+    display: none;
+    /* margin-left: auto; */
+}
+/* footer section */
+.iconset{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.icon{
+    width: 50px;
+    align-items: center;
+    margin: 0px 15px;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 2rem;
+}
+.icon:hover{
+    background-image: linear-gradient(to bottom right,yellow,red);
+    }
+    .icon:hover i{
+        color: white;
+        animation: shake 0.25s;
+    }
+    .uparrow{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0px 15px; 
+        background-image: linear-gradient(to bottom right,rgb(25, 210, 188),red);
+        float: right;
+        margin: 20px 10px 5px 0px ;
+
+    }
+    footer p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: x-large;
+        
+    }
+    html{
+        scroll-behavior: smooth;
+    }
+
+
+
+@media (max-width:700px) {
+
+    /* CSS rules here */
+    .section {
+        grid-template-columns: auto;
+    }
+
+    header {
+        background-color: rgb(153, 222, 62);
+    }
+
+    .section img {
+        width: 300px;
+    }
+/* three line */
+    .menu-select {
+        display: block;
+        margin-left: auto;
+    }
+    .menu-close{
+        display: none;
+    }
+
+    .navebar ul li {
+        display: none;
+    }
+
+    #menu-select:checked + .navebar ul li {
+        display: block;
+        margin-left: 150px;
+        background-color: rgb(197, 193, 228);
+        position: relative;
+        top: 100px;
+        padding: 5px;
+        font-size: x-large;
+
+    }
+
+    .navebar ul li:hover {
+        transition: ease-in-out ;
+        border-radius: 20px;
+        border: 10px;
+
+     }
+    .title {
+        font-size: 1.5rem;
+        font-weight: bolder;
+     }
+    
+     .uparrow{ 
+        background-image: linear-gradient(to bottom right,rgb(201, 25, 210),rgb(56, 211, 162));
+        
+        
+}
+}
